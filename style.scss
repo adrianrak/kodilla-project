@@ -447,6 +447,25 @@ footer {
 		margin: 0;	
 	}
 }
+
+  /*FORM*/
+  
+ form {
+ 	padding: 20px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	.button {
+ 		background-color: #04C3E1;
+ 		color: #FFFFFF;
+ 		cursor: pointer;
+ 		&:hover {
+			background-color: #FFFFFF;
+			color: #04C3E1;
+ 		}
+ 	}
+ }
+
+ 
 /*MEDIA*/
 
 @media (max-width: 1200px) {

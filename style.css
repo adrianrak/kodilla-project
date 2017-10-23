@@ -405,6 +405,19 @@ footer {
   .footer-2 p {
     margin: 0; }
 
+/*FORM*/
+form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column; }
+  form .button {
+    background-color: #04C3E1;
+    color: #FFFFFF;
+    cursor: pointer; }
+    form .button:hover {
+      background-color: #FFFFFF;
+      color: #04C3E1; }
+
 /*MEDIA*/
 @media (max-width: 1200px) {
   header {
