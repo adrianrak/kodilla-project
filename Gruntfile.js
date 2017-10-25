@@ -8,10 +8,10 @@ module.exports = function(grunt) {
      		 },
       		dist: {
         	  files: {
-         	   'css/style.css': 'sass/style.scss'
+         	   'style.css': 'style.scss'
         	  }
       		 }
-    		}
+    		},
 	imagemin: {
     	   dynamic: {
               files: [{
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
                 dest: 'images/build/'
               }]
     	    }
-	}
+	},
 	watch: {
     	   scripts: {
               files: ['sass/*.sass'],
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
                 spawn: false,
               },
             }
-	}
+	},
 	browserSync: {
     	   bsFiles: {
               src : 'assets/css/*.css'
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
 	}
   });
   // Load the plugins tasks
-	grunt.loadNpmTasks('grunt-sass');
+	grunt.loadNpmTasks('grunt-contribGruntfil-sass');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-browser-sync');
