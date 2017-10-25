@@ -24,7 +24,7 @@ module.exports = function(grunt) {
 	},
 	watch: {
     	   scripts: {
-              files: ['sass/*.sass'],
+              files: ['*.scss'],
               tasks: ['sass'],
               options: {
                 spawn: false,
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
 	},
 	browserSync: {
     	   bsFiles: {
-              src : 'assets/css/*.css'
+              src : '*.css'
            },
            options: {
               server: {
@@ -48,5 +48,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-browser-sync');
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'imagemin']);
+  grunt.registerTask('default', ['sass', 'imagemin', 'browserSync', 'watch']);
 };
